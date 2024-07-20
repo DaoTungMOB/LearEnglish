@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical"
+    android:weightSum="7"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_gravity="center"
+        android:gravity="left|bottom"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+<!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--            android:paddingLeft="12dp"-->
+<!--            android:paddingRight="12dp"-->
+<!--            android:id="@+id/lnPlayNow"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <androidx.appcompat.widget.AppCompatImageView-->
+<!--                android:src="@drawable/ic_play"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"/>-->
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/tvPlayNow"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="12dp"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:text="@string/play_now"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content" />-->
+<!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+        <com.nightonke.boommenu.BoomMenuButton
+            app:bmb_normalColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:id="@+id/bmb"
+            app:bmb_buttonEnum="textInsideCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bmb_dotRadius="0dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_play"
+                android:layout_gravity="center" />
+
+        </com.nightonke.boommenu.BoomMenuButton>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:id="@+id/lnRank"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:src="@drawable/ic_rank"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="@string/rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:id="@+id/lnAddQuestion"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:src="@drawable/ic_add"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="@string/add_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:id="@+id/lnLogout"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:src="@drawable/ic_logout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="@string/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dev.testenglish">
+
+    <application
+        android:name="com.dev.testenglish.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_app"
+        android:supportsRtl="true"
+        tools:replace="android:icon"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name="com.dev.testenglish.MainActivity">
+
+        </activity>
+        <activity android:name="com.dev.testenglish.testbytopic.TopicActivity" />
+        <activity android:name="com.dev.testenglish.questionbytopic.QuestionByTopicActivity" />
+        <activity android:name="com.dev.testenglish.rank.RankActivity" />
+        <activity android:name="com.dev.testenglish.addquestionbytopic.AddQuestionActivity" />
+        <activity android:name="com.dev.testenglish.login.LoginActivity"/>
+
+        <activity android:name="com.dev.testenglish.SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
